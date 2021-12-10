@@ -1,0 +1,635 @@
+ /*  
+Author: Andia Dark 
+File Name: styles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1, figure, figcaption, article, section, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  body {
+    background: #b39c89;
+    padding: 30px;
+    
+  }
+  
+  .grid {
+      display: grid;
+      grid-template-columns: auto;
+  }
+  
+  .gridPortfolio {
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+  
+  a {
+    text-decoration: none;
+    color:white;
+  }
+  
+  
+  
+  hr {
+  color:#432D27;
+  border-style:solid;
+  }
+  
+  header{
+    text-align: center;
+    /* color: #432D27; */
+    color:#2a1f14;
+    padding-inline-start:0%;
+    padding-top: 15px;
+    font-family: 'Merriweather', serif;
+  
+  }
+  
+  /* header h1 {
+    font-size: 1.5em;
+  padding: 4%;
+  margin-right: 15%;
+  } */
+  
+  /*style rules for navigation*/
+  nav{
+    background-color:#432D27; 
+  }
+  
+  /* nav ul {
+    text-align: center;
+  }  */
+  
+  /* nav li{
+    display: inline-block;
+    padding-right: 7%;
+  } */
+  
+   /* nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    font-size: 20px;
+    text-align: center;
+    
+  } */
+  
+  .mobile-nav a {
+      color: #fff;
+      text-align: center;
+      font-size: 2em;
+      text-decoration: none;
+      padding: 3%;
+      display: block;
+  }
+   
+  .mobile-nav a.menu-icon {
+      display: block;
+      position: absolute;
+      right: 0; 
+      top: 0;  
+  }
+   
+  .menu-icon div {
+      height: 50px;
+      width: 50px;
+      background-color: #432D27;
+  }
+  
+  /*Style rules for welcome div*/
+  #welcome img{
+    float: left;
+    height:400px;
+    width:300px;
+    padding-left: 30px;
+    border-radius: 8px;
+  }
+  
+  #welcome h3 {
+  font-family: 'Merriweather', serif;
+  color:white;
+  text-shadow: 2px 3px black ;
+  
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  
+  #homePicture img {
+    animation-duration: 3s;
+    animation-name: bounceIn;
+  }
+  
+  #welcome img {
+  width: 300px;
+  height: 350px;
+  border-radius: 30%;
+  }
+  
+  /* Style rules for index*/
+  .indexL p img{
+  float:left;
+  clear:right;
+  }
+  
+  .indexR p img{
+  float: right;
+  clear:left;
+  
+  }
+  
+  .moveOver{
+    clear: left;
+  }
+  
+  #music h2 {
+    color: #2a1f14;
+  }
+  
+  #music p {
+    display: block;
+  }
+  
+  
+  
+  .abc h1{
+  text-shadow: 2px 3px black ;
+  }
+  
+  /* Style rule for images*/
+  img {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    display: block;
+  }
+  
+  /*Style rules for figures*/
+  figure {
+  position: relative;
+  max-width: 275px;
+  margin: 2% auto;
+  border: 4px solid white;
+  }
+  
+  figcaption {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  padding: 5% 0;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-shadow: 2px 2px #432D27;
+  
+  }
+  
+   #menu-links, .tab-desk{
+    display: none;
+  }
+  
+  .imgFig {
+  height: 200px;
+  width:300px;
+  }
+  
+  /*Style rules for contact page*/
+  #form .map {
+    max-width: 100%;
+    height:400px;
+    width: 99%;
+    border: 2px solid #432D27;
+    margin-right: 25px;
+    margin-left: .5%;
+  
+  }
+  
+  
+  
+  /*Style rules for contact links*/
+  .contactLinks {
+    background-color: #432D27;
+    color:#b39c89;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .contactEmail p {
+    color: #b39c89;
+    
+  }
+  
+  
+  .smImg img{
+  height:200px;
+  width:300px;
+  }
+  
+  
+  
+  
+  
+  /*Style rules for heritage div*/
+  
+  #heritage ul{
+    color:white;
+    list-style-type: none;
+  }
+  
+  #heritage hr {
+    color: white;
+    font-weight: bolder;
+  }
+  
+  /* Show flag in mobile */
+  .mobile-flag-b {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .mobile-flag- {
+    float: left;
+    height:400px;
+    width: 450px;
+    
+  }
+  /* show flag in mobile */
+  .mobile-right {
+  clear: both;
+  }
+  
+  
+  
+  /*Style rules for footer content*/
+  footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #432D27;
+    color: #b39c89;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    }
+    
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+  
+    }  
+  
+    .round {
+        border-radius: 8px;
+    }
+  
+    
+  
+    
+  
+    .padLeft {
+      padding-left: 30px;
+    }
+  
+    #contact h3{
+        text-align: center;
+    }
+  
+    #contact embed {
+      border: 3px solid #432D27;
+    }
+  
+   
+  
+   #here img{
+     
+     padding-left: 5px;
+     height:300px;
+     width: 250px;
+   }
+  
+   #portfolio img {
+     box-shadow: 2px 2px white;
+     padding: 3px;
+   }
+  
+   #portfolio p {
+     font-size: large;
+   }
+   
+  
+    .three {
+        float:left;
+        height: 450px;
+        width: 600px;
+    }
+  
+    .four{
+        clear:right;
+    }
+  
+  /*Places table*/
+  
+  #places table {
+      margin: 0 auto;
+      width: 50%;
+  }
+  
+    /*Style rules for grid on contact page*/
+  
+   
+  
+    .grid{
+      padding: 3.75%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    }
+  
+    /* Style rules for portfolio*/
+    #portfolio h3{
+      color:white;
+      font-weight: bold;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      background-color:  #432D27;
+      width:30%;
+      margin: auto;
+      padding: 5px;
+    }
+  
+    .portL {
+      float: left;
+    }
+  
+    .portR {
+      float: right;
+      clear: left;
+    }
+  
+    button {
+      height: 3em;
+      background-color:#432D27;
+      color: white;
+      font-size: 1em;
+      
+  }
+  
+    #contact {
+      margin: 0 15px;
+    }
+  
+    /*Style rules for form*/
+  
+    form {
+      color: #2a1f14;
+      font-weight: bold;
+    }
+  
+    #form h2 {
+      text-align: center;
+      color:#2a1f14;
+    }
+  
+    #form {
+      margin-right: 25px;
+      width:auto;
+    }
+  
+    #form  fieldset {
+      border: 2px solid #2a1f14;
+    }
+  
+    #form label {
+      font-size: 15pt;
+    }
+  
+    .btn {
+      color: white;
+      text-align: center;
+      width: 90%;
+      font-weight: bold;
+      align-self: center;
+      background-color: #2a1f14;
+    }
+    
+    /*Style rules for places div*/
+  
+    /* #places table {
+      color: whitesmoke;
+      font-weight: bold;
+      clear:right;
+    } */
+  
+    #places h3{
+      color:#432D27;
+    }
+  
+    #places th {
+      color: whitesmoke;
+      font-weight: bolder;
+      font-size: 15pt;
+      background-color: #432D27;
+    } 
+    #places td {
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+  
+    /*Style rule for aside*/
+    aside {
+      background: #432D27;
+      color:white;
+      width: 30%;
+      float: right;
+      position: sticky;
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Merriweather', serif;
+      grid-column: 1/span 2;
+    }
+  
+    
+  
+     /* Media query for tablet viewport*/
+  @media screen and (min-width: 550px),print {
+  /* #places table {
+      margin: 0 auto;
+      width: 50%;
+  } */
+  #places table {
+      color: whitesmoke;
+      font-weight: bold;
+      clear:right;
+    }
+  
+    .mobile-cont-p {
+      clear: left;
+    }  
+  
+  form {
+     width:auto;
+  }
+  
+  
+  
+  nav ul {
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  #places table {
+     width: auto;
+  }
+  header {
+    color:white;
+  }
+  
+  .mobile aside, {
+    display: none;
+  }
+  
+  .mobile, .mobile-nav {
+    display: none;
+  }
+  
+  .tab-desk{
+    display: block;
+  }
+  
+  
+  
+  /* Shows for large screen */
+  .mobile-flag-b {
+    float: left;
+    height:400px;
+    width: 450px;
+    
+  }
+  
+  .mobile-flag-j {
+    float: right;
+    height:400px;
+    width: 450px;
+    
+  }
+  
+  /* show for larger screen */
+  /* .mobile-right {
+    clear: both;
+  } */
+  
+  #places table {
+    width: 50%;
+  }
+  nav li {
+    border-top: none;
+    display: inline-block;
+    padding-right: 7%;
+    /* border-bottom: 1px solid #fff; */
+  }
+  nav li:last-child{
+    border-right: none;
+  }
+  nav li a {
+    padding-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    }
+  
+  
+  
+   .grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 25px;
+  
+    }
+  
+    .gridPortfolio {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 25px;
+    }
+         
+        
+  }
+  
+    /* Media query for desktop viewport*/
+    @media screen and (min-width: 769px), print{
+      #places tr:nth-child(odd){
+        background-color:#432D27;
+      }
+  
+      #places table {
+        margin: auto;
+        width: 85%;
+      }
+  
+      .btn {
+        grid-column: 1 / span 2;
+      }
+    }
+  
+    /* Media query for large desktop viewport*/
+    @media screen and (min-width: 1000px),print {
+  
+        body{
+            background: linear-gradient(#b39c89, #654321);
+        }
+        nav li a:hover {
+            background-color: white;
+            color:#2a1f14;
+            transform: scale(1.5);
+        }
+  
+        nav li a  {
+            padding: 15px;
+        }
+        
+    }
+  
+    @media print{
+      header, footer, form {
+        display: none;
+    }
+  
+    }
+  
+   
+  
+  

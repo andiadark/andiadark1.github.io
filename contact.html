@@ -1,0 +1,137 @@
+<!--
+Name: Andia Dark
+File Name: contact.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Condensed:wght@300;400&family=Yaldevi:wght@400;500&display=swap" 
+        rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/butterfly-favicon.png">
+        
+    </head>
+    
+    <nav class="mobile-nav">
+      <div id="menu-links">
+        <a href="index.html">Homepage</a>
+        <a href="music.html">Music</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="places.html">Places</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class = "menu-icon" onclick="hamburger()">
+        <div>&#9776;</div>
+      </a>
+    </nav>
+
+    <header><h1>Contact</h1></header>
+
+    <nav class="round tab-desk">
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    
+
+    <body>
+        <center>
+          <h1 class="tab-desk" style="color: #2a1f14;">Contact Me!</h1>
+          <!-- <br>
+        <audio controls autoplay class="tab-desk">
+            <source src="media/Beat Your Competition - Vibe Tracks.mp3" type="audio/mp3">
+            <source src="media/Beat Your Competition - Vibe Tracks.ogg" type="audio/ogg">
+            <p>Your brower does not support the audio element.</p>
+        </audio> -->
+    </center>
+        <main class="grid ">
+            <div id="contact">
+            <br class="tab-desk">
+            <br>
+                <p class="contactLinks round" style="width: auto; color: white;">Phone: <a style="color: #b39c89;"href="tel:8503211234"> (850) 321-1234</a></p>
+                <br>
+                
+                <p class="contactLinks round" style="width: auto;">Email: <a href="mailto:andia1.dark@famu.edu">andia1.dark@famu.edu</a></p>
+                <p class="contactLinks round" style="width: auto; color: white; margin-top: 20px;">LinkedIn: <a style="color: #b39c89;"  href="https://www.linkedin.com/in/andia-dark-7203451b4/">Andia Dark's LinkedIn</a></p>
+                <br>
+                <center><h2><a href="images/resume.pdf" >RESUME</a></h2></center>
+                <center><embed style="height: 645px; width: 95%;" src="images/resume.pdf" ></center>
+                
+                
+                
+            </div>
+            <div id="form">
+              <h2>Complete the form below for inquiries!</h2>
+            
+            <form>
+              <fieldset>
+                <legend> Inquiries </legend>
+                <label for="fName">Full Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="company">Company:</label><br>
+                <input type="text" id="company" name="company"><br>
+
+                <label for="contactPage">Please describe your inquiry: </label><br>
+                <textarea id="contactText" name="contactText" rows="3" cols="20"></textarea><br>
+
+                <label for="ageRange">Age:</label><br>
+                <select name="age" id="age">
+                    <option value="range1">14 and below</option>
+                    <option value="range2">15-18</option>
+                    <option value="range3">19-29</option>
+                    <option value="range4">30-40</option>
+                    <option value="range5">41+</option>
+                </select>
+                <br>
+                <br>
+                <!-- <legend>Please check one: </legend> -->
+                    <label for="rate">How did you like the site? </label>   <br>             
+                    <input type="checkbox" name="yopinion" id="yopinion" value="yes">Enjoyed content</label>
+                    <input type="checkbox" name="nyopinion" id="nopinion" value="no">Did not enjoy content</label>
+                    <input type="checkbox" name="other" id="other" value="other">Prefer not to say</label>
+
+                <br>
+                <br>
+
+                <center>
+                <input type="submit" value="Submit" class="btn"><br>
+                </center>
+              </fieldset>
+
+              
+            </form>
+            
+            <br>
+            
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.3260873031836!2d-84.28513120000001!3d30.42685670000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ec5f8c00000001%3A0x6c6eb455af435a90!2sFlorida%20A%26M%20University!5e0!3m2!1sen!2sus!4v1635944979305!5m2!1sen!2sus"  " allowfullscreen="" loading="lazy"></iframe>
+            <br>
+            
+            </div>
+        </main>
+        <center>
+          <button class="round" onclick="content()">Click Me</button>
+          </div><center>
+            <p id="new"></p>
+    
+
+    <footer class="four round" style="margin-top: 10px;">
+        <p>Email: <a href="mailto:andia1.dark@famu.edu">andia1.dark@famu.edu</a></p>
+        <p> <a href="https://www.famu.edu/" target="_blank">Florida Agricultural and Mechanical University</a></p>
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+    </footer>
+<script src="scripts/script.js"></script>
+</body>
+
+</html>
